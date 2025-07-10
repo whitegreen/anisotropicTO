@@ -1,11 +1,4 @@
 # anisotropicTO
-Graded anisotropic biocomposite for mass customization of lightweight building structures: developing a sawdust particleboard reinforced with bamboo strips
+Topology optimization for graded anisotropic material, adapted from Efficient topology optimization in MATLAB using 88 lines of code. 
 
-Xiaofan Zhang   
-Yizhuo Liu        School of Engineering Technology, Purdue University
-Hao Hua
-Ludger Hovestadt   Department of Architecture, ETH Zürich
-Yuan Zhang 12      TUM School of Engineering and Design 
-Lingju Wu         School of Civil Engineering, University of Queensland
-
-
+Southeast University
