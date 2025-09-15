@@ -52,7 +52,7 @@ iK = reshape(kron(edofMat,ones(8,1))',64*eN,1);
 jK = reshape(kron(edofMat,ones(1,8))',64*eN,1);
 
 %% LOADS & SUPPORTS MBB-BEAM, i=1:nelx, j=1:nely, cell(i,j) maps to index 2*j + 2*(i-1)*(nely+1)
-% centralF = 4000*(9*6)/0.315;                                 %RVE depth(1.0),beam depth = 315 mm,
+% centralF = 4000*(9*6)/0.315;                                 %RVE thick(1.0),beam width = 315 mm,
 centralF = 4000*(10.2*6.8)/0.35 ;
 F = sparse([2 2+2*(nely+1) 2+4*(nely+1)], [1 1 1], (-1/6)*[centralF  centralF  centralF], 2*nN,1);  %load on 3 points, load of MBB is 0.5*centralF
 fixeddofs = union([1:2:(2*nely+1)], [2*nN-4  2*nN-2  2*nN]); % three points fixed
@@ -216,3 +216,4 @@ end
 strainDmin = [ min(strainD1(:))   min(strainD2(:))  min(strainD3(:))   min(strainD4(:))  ];
 strainDmax = [ max(strainD1(:))   max(strainD2(:))  max(strainD3(:))   max(strainD4(:))  ];
 X;% breakpoint this line to see data in Workspace
+
